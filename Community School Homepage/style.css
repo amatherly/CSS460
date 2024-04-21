@@ -1,0 +1,201 @@
+/* General setup */
+/*Fonts:*/
+
+/*First of all, download a couple of free-to-use fonts. Because this is a college, the fonts should be chosen to give the page a fairly serious, formal, trustworthy feel: a serif site-wide font for the general body text, coupled with a sans-serif or slab serif for the headings might be nice.*/
+/*Use a suitable service to generate bulletproof @font-face code for these two fonts.*/
+/*                                                          Apply your body font to the whole page, and your heading font to your headings.*/
+/*General text styling:*/
+
+/*Give the page a site-wide font-size of 10px.*/
+/*                                         Give your headings and other element types appropriate font-sizes defined using a suitable relative unit.*/
+/*                                         Give your body text a suitable line-height.*/
+/*                                         Center your top level heading on the page.*/
+/*                                         Give your headings a little bit of letter-spacing to make them not too squashed, and allow the letters to breathe a bit.*/
+/*Give your body text some letter-spacing and word-spacing, as appropriate.*/
+/*Give the first paragraph after each heading in the <section> a little bit of text-indentation, say 20px.*/
+/*                                                                                                     Links:*/
+
+/*                                                                                                     Give the link, visited, focus, and hover states some colors that go with the color of the horizontal bars at the top and bottom of the page.*/
+/*Make it so that links are underlined by default, but when you hover or focus them the underline disappears.*/
+/*Remove the default focus outline from ALL the links on the page.*/
+/*Give the active state a noticeably different styling so it stands out nicely, but make it still fit in with the overall page design.*/
+/*Make it so that external links have the external link icon inserted next to them.*/
+/*Lists:*/
+
+/*Make sure the spacing of your lists and list items works well with the styling of the overall page. Each list item should have the same line-height as a paragraph line, and each list should have the same spacing at its top and bottom as you have between paragraphs.*/
+/*Give your list items a nice bullet appropriate for the design of the page. It is up to you whether you choose a custom bullet image or something else.*/
+/*Navigation menu:*/
+
+/*Style your navigation menu so that it harmonizes with the page.*/
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap');
+
+@font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/Kanit/Kanit-Light.ttf');
+}
+
+
+* {
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Kanit', serif;
+    margin: 0 auto;
+    min-width: 1000px;
+    max-width: 1400px;
+    line-height: 20px;
+}
+
+/* Layout */
+
+section {
+    float: left;
+    width: 50%;
+}
+
+aside {
+    float: left;
+    width: 30%;
+}
+
+nav {
+    float: left;
+    width: 20%;
+}
+
+footer {
+    clear: both;
+}
+
+header, section, aside, nav, footer {
+    padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+    border-top: 5px solid #a66;
+    border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: 2px;
+
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1.2em;
+}
+
+h5 {
+    font-size: 1em;
+}
+
+h6 {
+    font-size: 0.8em;
+}
+
+body p {
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+section p:first-of-type {
+    text-indent: 20px;
+}
+
+a {
+    text-decoration: underline;
+    color: #a66;
+}
+
+a:visited {
+    color: #a66;
+}
+
+a:focus, a:hover {
+    text-decoration: none;
+    color: #a66;
+    outline: none;
+}
+
+a:active {
+    color: #3a0000;
+    background-color: #f9f9f9;
+    font-weight: bold;
+}
+
+a[href^="http"] {
+    background: url('external-link-52.png') no-repeat 100% 0;
+    background-size: 16px 16px;
+    padding-right: 19px;
+}
+
+ul, ol {
+    line-height: 20px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    list-style-type: square;
+}
+
+li {
+    line-height: 1.6;
+    padding-left: 1.4em;
+}
+
+
+nav {
+    padding: 1px;
+
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+
+nav a {
+    list-style-type: none;
+    display: block;
+    border: #aa6666 1px solid;
+    margin: 10px 50px;
+    font-size: 1.6em;
+    height: 40px;
+    line-height: 40px;
+    box-shadow: #333333 1px 1px 1px;
+    font-family: "Roboto Slab", serif;
+}
+
+
+
+
